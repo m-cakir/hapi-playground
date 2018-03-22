@@ -1,0 +1,21 @@
+fixtures:
+        - model: User
+          data:
+            username: hero
+            password: 123
+        - model: Movie
+          data:
+            name: Shichinin No Samurai
+            director: Akira Kurosava
+        - model: Movie
+          data:
+            name: Matrix
+            director: Wachowski Brothers
+        - model: Movie
+          data:
+            name: Yongseoneun Eupda
+            director: Kim Hyeong-jun
+        - model: Movie
+          data:
+            name: Peekay
+            director: Rajkumar Hirani

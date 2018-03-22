@@ -1,0 +1,28 @@
+{
+  "name": "hapi-playground",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "hapi": "^17.2.0",
+    "joi": "^13.1.2",
+    "boom": "^7.1.1",
+    "good": "^8.1.0",
+    "good-squeeze": "^5.0.2",
+    "good-console": "^7.1.0",
+    "inert": "^5.1.0",
+    "vision": "^5.3.1",
+    "hapi-swagger": "^9.1.1",
+    "sequelize": "^4.34.1",
+    "sequelize-cli": "^4.0.0",
+    "sequelize-fixtures": "^0.7.0",
+    "sqlite3": "^3.1.13",
+    "hapi-auth-jwt2": "^8.0.0",
+    "jsonwebtoken": "^8.2.0"
+  },
+  "my_app": {
+    "secret_key": "SECRET_ONLY_FOR_YOU"
+  }
+}
