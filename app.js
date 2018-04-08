@@ -15,6 +15,8 @@ if ('production' !== process.env.NODE_ENV){
     config.host = 'localhost';
 };    
 
+console.log("app name: " + process.env.HEROKU_APP_NAME);
+
 const server = Hapi.server(config);
 
 async function start() {
