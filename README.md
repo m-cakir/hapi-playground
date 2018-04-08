@@ -15,10 +15,6 @@ clone this repo, then
 npm init
 ```
 
-## Deployment
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 ## Built With
 
 * [Node](https://nodejs.org) - Javascript run-time environment
