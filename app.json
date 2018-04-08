@@ -2,5 +2,10 @@
     "name": "Hapi Playground",
     "description": "Demo of creating Restful API with Hapi.js",
     "repository": "https://github.com/m-cakir/hapi-playground",
-    "keywords": ["node", "hapi"]
+    "keywords": ["node", "hapi"],
+    "env":{
+        "HEROKU_APP_NAME": {
+            "required": true
+        }
+    }
 }
