@@ -35,13 +35,13 @@ npm init
 
 ## Usage
 Just start the application with (`npm start`). The application is
-running at [localhost:3000](localhost:3000).
+running at [localhost:3000](http://localhost:3000).
 
 ![alt text](screenshot/api-doc.png "Swagger API Document")
 
 Initial test data is `import.yaml` file.
 
-Swagger path is [localhost:3000/documentation](localhost:3000/documentation).
+Swagger path is [localhost:3000/documentation](http://localhost:3000/documentation).
 
 Make http requests via Curl or Postman or Swagger.
 
@@ -53,9 +53,9 @@ password: 123
 
 ## Methods
 
-* Authentication [localhost:3000/auth](localhost:3000/auth)
-* Movies [localhost:3000/movies](localhost:3000/movies)
-* Movie [localhost:3000/movie/{id}](localhost:3000/movie/{id})
+* Authentication [localhost:3000/auth](http://localhost:3000/auth)
+* Movies [localhost:3000/movies](http://localhost:3000/movies)
+* Movie [localhost:3000/movies/{id}](http://localhost:3000/movies/{id})
 
 ## Screenshot
 
