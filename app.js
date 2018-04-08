@@ -13,9 +13,7 @@ var config = {
 
 if ('production' !== process.env.NODE_ENV){
     config.host = 'localhost';
-};    
-
-console.log("app name: " + process.env.HEROKU_APP_NAME);
+};
 
 const server = Hapi.server(config);
 
@@ -69,26 +67,32 @@ async function start() {
             }
         }
     });
+    
+    var swaggerOptions = {
+        info: {
+            title: 'API Documentation',
+            version: Pack.version,
+        },
+        securityDefinitions: {
+            'jwt': {
+                'type': 'apiKey',
+                'name': 'Authorization',
+                'in': 'header'
+            }
+        },
+        security: [{ 'jwt': [] }]
+    };  
+
+    if ('production' === process.env.NODE_ENV){
+        swaggerOptions.host = 'https://' + process.env.HEROKU_APP_NAME + '.herokuapp.com';
+    };
 
     await server.register([
         require('inert'),
         require('vision'),
         {
             plugin: HapiSwagger,
-            options: {
-                info: {
-                    title: 'API Documentation',
-                    version: Pack.version,
-                },
-                securityDefinitions: {
-                    'jwt': {
-                        'type': 'apiKey',
-                        'name': 'Authorization',
-                        'in': 'header'
-                    }
-                },
-                security: [{ 'jwt': [] }]
-            }
+            options: swaggerOptions
         }
     ]);
 
