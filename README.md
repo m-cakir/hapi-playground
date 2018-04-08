@@ -1,6 +1,6 @@
 # Hapi.js Playground
 
-Creating Restful API with Hapi.js including some features, such as joi, boom, good, swagger, sequelize, sqlite, json web token authentication. 
+Demo of creating Restful API with Hapi.js including some features, such as joi, boom, good, swagger, sequelize, sqlite, json web token authentication. 
 
 ### Prerequisites
 
