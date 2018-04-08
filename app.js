@@ -84,7 +84,7 @@ async function start() {
     };  
 
     if ('production' === process.env.NODE_ENV){
-        swaggerOptions.host = 'https://' + process.env.HEROKU_APP_NAME + '.herokuapp.com';
+        swaggerOptions.host = process.env.HEROKU_APP_NAME + '.herokuapp.com';
     };
 
     await server.register([
