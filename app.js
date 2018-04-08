@@ -7,14 +7,15 @@ const Routes = require('./routes');
 const Pack = require('./package');
 const Fixtures = require('sequelize-fixtures');
 
-console.log("process.env");
-console.log(process.env);
-console.log("process.env.NODE_ENV: " + process.env.NODE_ENV);
-
-const server = Hapi.server({
-    host: 'localhost',
+var config = {
     port: process.env.PORT || '3000'
-});
+};    
+
+if ('production' !== process.env.NODE_ENV){
+    config.host = 'localhost';
+};    
+
+const server = Hapi.server(config);
 
 async function start() {
 
